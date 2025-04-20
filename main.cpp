@@ -2,11 +2,12 @@
 #include <SFML/Window.hpp>
 #include <iostream>
 
-sf::ConvexShape* buttons(float coords[3]) {
+sf::ConvexShape* buttons(float coords[2]) {
 
     float x = coords[0];
     float y = coords[1];
-    float z = coords[2];
+    int z = 1;
+
 
     sf::ConvexShape b1;
     b1.setPointCount(4);
@@ -37,8 +38,7 @@ int main() {
     
     float x = 10;
     float y = 500;
-    float mult = 2;
-    float coords[3] = { x, y, mult };
+    float coords[2] = { x, y};
 
     sf::ConvexShape* arr = buttons(coords);
     
