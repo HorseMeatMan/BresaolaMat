@@ -6,6 +6,7 @@
 #custom
 *.exe
 *.pdb
+
 # User-specific files
 *.rsuser
 *.suo
